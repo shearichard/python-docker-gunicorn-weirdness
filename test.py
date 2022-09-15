@@ -7,7 +7,7 @@ from gunicorn import __version__
 
 def app(environ, start_response):
     """Simplest possible application object"""
-    data = b'Hello, World!\n'
+    data = b'Hello, World!\nThis is being used as a test of how pip install behaves in some circumstances\n'
     status = '200 OK'
     response_headers = [
         ('Content-type', 'text/plain'),
